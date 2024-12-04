@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('fonts/montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Courgette-Regular;
+  src: url('fonts/courgette/Courgette-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url('fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url('fonts/notosans/NotoSans-Regular.ttf');
+}
+
+
+/* Roots */
+:root {
+  --light-gray-color: #919191;
+  --white-color: #fff;
+  --gray-color: #666666;
+  --black-color: #000;
+  --red-color: #d41b22;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+
+  margin: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  z-index: 3;
+  height: 100px;
+  border-top: solid 4px var(--red-color);
+}
+
+.navbar-nav>li>a:hover {
+  color: var(--red-color);
+}
+
+.navbar-nav>li>a {
+  color: var(--black-color);
+  font-weight: 350;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'montserrat';
+}
+
+.navbar-nav {
+  padding: 0 10px;
+  gap: 30px;
+}
+
+/* header */
+
+.head-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0;
+  color: var(--red-color);
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.head-btn:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+/* Header */
+
+/* Welcome Sec */
+
+.welcome-img {
+  width: 390px;
+  height: 390px;
+  margin: 50px auto 0;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.welcome-text .txt4 {
+  color: var(--black-color);
+  border: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+
+.welcome-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.welcome-text .txt4:hover {
+  color: var(--red-color);
+  transition: color 0.3s;
+}
+
+.welcome-text .txt4 i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Welcome Sec */
+
+/* Discover Sec */
+
+.discover-patoplace-text {
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 1px;
+
+}
+
+/* Discover Sec */
+
+/* Content Sec */
+
+#content-intro {
+  height: 80vh;
+}
+
+#content-intro .img-intro {
+  width: 350px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+#content-intro .container {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#content-intro .img-intro:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+#content-intro .row a {
+  color: var(--black-color);
+}
+
+#content-intro .txt4 {
+  color: var(--black-color);
+  border: none;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+
+#content-intro .row a:hover {
+  color: var(--red-color);
+  transition: color 0.3s;
+}
+
+#content-intro i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Content Sec */
+
+/* Background Sec */
+
+.tall-card {
+  height: 100%;
+  min-height: 400px;
+}
+
+.wide-card {
+  height: 100%;
+  min-height: 200px;
+}
+
+.card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tit2 {
+  font-family: 'myfont';
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--red-color);
+  text-transform: capitalize;
+}
+
+.tit1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: var(--black-color);
+  font-weight: 900;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
+
+.discover-btn,
+.discover-btn1 {
+  font-size: 22px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: 'Poppins';
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.discover-btn {
+  width: 157px;
+}
+
+.discover-btn1 {
+  width: 255px;
+  height: 60px;
+}
+
+.discover-btn:hover,
+.discover-btn1:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.card {
+  width: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+.carousel .carousel-indicators button:hover {
+  background-color: var(--red-color);
+}
+
+/* Background Sec */
+
+/* Booking Sec */
+
+#booking iframe {
+  z-index: 1;
+  margin: 22px;
+  padding: 22px;
+  width: 9000px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.booking-btn {
+  font-size: 20px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: 'Poppins';
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  width: 155px;
+  height: 55px;
+}
+
+/* Booking Sec */
+
+/* Review Sec */
+
+#carouselExampleReview {
+  height: 90vh;
+  overflow: hidden;
+}
+
+#carouselExampleReview .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--light-gray-color);
+  transition: all 0.3s ease;
+}
+
+#carouselExampleReview p {
+  font-size: 22px;
+}
+
+#carouselExampleReview i {
+  color: var(--red-color);
+}
+
+#carouselExampleReview .review-img {
+  width: 110px;
+  height: 110px;
+  border: solid 4px var(--red-color);
+}
+
+
+#carouselExampleReview .carousel-indicators .active {
+  background-color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+#carouselExampleReview .carousel-indicators button:hover {
+  background-color: var(--red-color);
+}
+
+#carouselExampleReview .carousel-control-prev-icon,
+#carouselExampleReview .carousel-control-next-icon {
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 50%;
+  padding: 25px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#carouselExampleReview .carousel-control-prev-icon:hover,
+#carouselExampleReview .carousel-control-next-icon:hover {
+  background-color: red;
+}
+
+/* Review Sec */
+
+/* Video Sec */
+.section-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.section-video {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.section-video .content-video {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.section-video .content-video h3 {
+  color: var(--white-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fade-in 1s ease-in-out;
+  font-family: 'Poppins';
+}
+
+.section-video .btn-play {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fade-in 1s ease-in-out;
+}
+
+.section-video .btn-play i {
+  transition: all 0.3s ease;
+  margin-top: 25px;
+}
+
+.section-video .btn-play:hover {
+  background-color: var(--red-color);
+  color: var(--black-color);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.section-video .btn-play:hover i {
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.modal-backdrop {
+  z-index: 1;
+}
+
+iframe {
+  z-index: 10000;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10000;
+
+
+}
+
+/* Video Sec */
+
+/* Blog Sec */
+
+#Blog {
+  height: 80vh;
+}
+
+#Blog .img-blog {
+  width: 370px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+#Blog .container {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#Blog .img-blog:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+#Blog .row a {
+  color: var(--black-color);
+}
+
+#Blog .txt4 {
+  color: var(--black-color);
+  border: none;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.4s;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+
+#Blog .row a:hover {
+  color: var(--red-color);
+  transition: color 0.3s;
+}
+
+#Blog i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Blog Sec */
+
+/* Sign up Sec */
+
+.sign-up {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0;
+  height: 35vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up input {
+  border-radius: 8px;
+  border: solid 1px var(--gray-color);
+  padding: 10px 20px;
+  color: #333333;
+  width: 200px;
+
+}
+
+.sign-up .txt5 {
+  margin: 10px;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 22px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.sign-up button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-up button:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* Sign up Sec */
+
+/* Footer Sec */
+
+footer {
+  background-color: #222222;
+  color: #ccc;
+  padding: 40px 0;
+}
+
+footer h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer p,
+footer li,
+footer a {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--red-color);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.end-footer {
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+  background-color: #111111;
+  padding: 15px 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.end-footer a {
+  color: var(--red-color);
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 16px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f00;
+}
+
+/* Footer Sec */
+
+/* Chifes Cards */
+
+.chef-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 350px;
+}
+
+.chef-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.chef-card img {
+  position: relative;
+  top: -70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #ff0000;
+}
+
+.chef-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.chef-role {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.breadcrumb {
+  margin-left: 100px;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: var(--black-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  color: var(--red-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.blog-img-overlay {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+}
+
+.blog-img {
+  width: 820px;
+  height: 615px;
+  border-radius: 16px;
+  transition: transform 0.3s ease-out;
+}
+
+.blog-img:hover {
+  transform: scale(1.05);
+
+}
+
+.blog-img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px !important;
+  border-radius: 16px;
+  background-color: var(--red-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-date {
+  font-weight: 700;
+  font-size: 39px;
+}
+
+.blog-month {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.blog-title {
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.blog-title:hover {
+  color: var(--red-color);
+  transition: all 0.3s ease;
+}
+
+.blog-content .txt4 {
+  color: var(--black-color);
+  border: none;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+
+.blog-content .txt4:hover {
+  color: var(--red-color);
+  transition: color 0.3s;
+}
+
+.blog-content .txt4 i {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.page-link {
+  border-radius: 100% ;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+}
+
+.active .page-link {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.page-link:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  transition: all 0.3s ease;
+}
+
+.widget-list li {
+  list-style: none;
+}
+
+
+.widget-list a {
+  color: var(--black-color);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-family: "montserrat";
+}
+
+.widget-list a:hover {
+  color: var(--red-color);
+  transition: color 0.3s;
+}
+
+.widget-list-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+}
+
+.text-truncate a {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--black-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.f-col {
+  border-right: solid 1px rgba(33, 37, 41, 0.75);
+  padding: 0 20px !important;
+}
+
+/* Chifes Cards */
+
+/* Upper Page */
+
+.backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.backToTop:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Upper Page */
